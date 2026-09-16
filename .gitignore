@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Scraper runtime files
+checkpoints/
+logs/
+
+# Generated scraper outputs
+review_scraper/data/
+data/konga_reviews.csv
+data/konga_summary.json
+
+# Generated graph artifacts
+data/processed/graph/
+
+# Local/generated archives
+*.zip
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
