@@ -1,0 +1,14 @@
+{
+    "stage": "3.4.5.2 Community-Based Identification",
+    "network_type": "Reviewer co-review network",
+    "candidate_reviewers": 327,
+    "candidate_reviews": 975,
+    "reviewer_product_relationships": 2854,
+    "shared_product_threshold": 2,
+    "algorithm": "Louvain",
+    "resolution": 1.0,
+    "random_state": 42,
+    "total_communities": 27,
+    "nontrivial_communities": 3,
+    "isolated_reviewers": 24
+}
