@@ -1,0 +1,45 @@
+{
+    "dataset": "Jumia review dataset",
+    "total_reviews": 14448,
+    "temporal": {
+        "reviewer_frequency_percentile": 0.95,
+        "reviewer_frequency_threshold": 2.0,
+        "product_activity_percentile": 0.95,
+        "product_activity_threshold": 10.0,
+        "reviewer_concentration_min_reviews": 5,
+        "reviewer_concentration_threshold": 0.2,
+        "temporal_signal_minimum": 1
+    },
+    "rating": {
+        "rating_deviation_std_threshold": 2,
+        "consistent_five_star_min_reviews": 5,
+        "repeated_relationship_min_reviews": 2,
+        "repeated_relationship_average_rating": 5.0,
+        "rating_signal_minimum": 1
+    },
+    "text": {
+        "exact_repeat_min_frequency": 2,
+        "near_duplicate_cosine_threshold": 0.9,
+        "near_duplicate_min_text_length": 20,
+        "exact_duplicates_excluded_from_near_duplicate": true,
+        "text_signal_minimum": 1
+    },
+    "reviewer_network": {
+        "shared_products_minimum": 5,
+        "close_activity_minimum": 2,
+        "temporal_window_days": 7,
+        "network_signal_minimum": 1
+    },
+    "stage1_candidate_rule": {
+        "signal_categories": [
+            "temporal",
+            "rating",
+            "textual",
+            "reviewer_network"
+        ],
+        "minimum_signal_categories": 3,
+        "candidate_reviews": 975,
+        "candidate_reviewers": 327,
+        "candidate_products": 49
+    }
+}
